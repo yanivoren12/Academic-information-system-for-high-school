@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AcademicFrameController">
+   <children>
+      <Button id="btnExit" fx:id="btnExit" layoutX="189.0" layoutY="231.0" mnemonicParsing="false" onAction="#getExitBtn" text="Exit" />
+      <Button id="btnStudentInfo" fx:id="btnStudentInfo" layoutX="99.0" layoutY="150.0" mnemonicParsing="false" onAction="#StudentInfo" text="Student Info" />
+      <ComboBox id="cmbStudents" fx:id="cmbStudents" layoutX="101.0" layoutY="107.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
