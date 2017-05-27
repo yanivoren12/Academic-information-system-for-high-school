@@ -25,6 +25,7 @@ public class AcademicFrameController implements Initializable{
 	private static int itemIndex = 3;
 		//Aviv
 	///yaniv^^^^^
+	//aviv2
 	@FXML
 	private Button btnExit = null;
 	@FXML
