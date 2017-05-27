@@ -23,9 +23,7 @@ import logic.Test;
 public class AcademicFrameController implements Initializable{
 	private StudentFormController sfc;	
 	private static int itemIndex = 3;
-		//Aviv
-	///yaniv^^^^^
-	//aviv2
+		
 	@FXML
 	private Button btnExit = null;
 	@FXML

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.insertNewCourseGui">
+   <children>
+      <ComboBox id="cmbUnit" fx:id="cmbUnit" layoutX="175.0" layoutY="89.0" prefWidth="150.0" />
+      <Text layoutX="60.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teaching Unit:" />
+      <Button id="btnOk" fx:id="btnOk" layoutX="375.0" layoutY="432.0" mnemonicParsing="false" text="Ok" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="124.0" layoutY="432.0" mnemonicParsing="false" text="Back" />
+      <Text layoutX="61.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Name:" />
+      <TextField id="txtCName" fx:id="txtCName" layoutX="175.0" layoutY="137.0" />
+      <Text layoutX="47.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teaching Hours:" />
+      <TextField id="txtHours" fx:id="txtHours" layoutX="175.0" layoutY="180.0" />
+      <Text layoutX="65.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PrevCourses:" />
+      <ListView id="listPrev" fx:id="listPrev" layoutX="175.0" layoutY="217.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
