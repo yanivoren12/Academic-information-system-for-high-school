@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SystemAdministratorGui">
+   <children>
+      <Text id="txtHello" fx:id="txtHello" layoutX="61.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello:" />
+      <Text id="txtName" fx:id="txtName" layoutX="110.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button id="btnNew" fx:id="btnNew" layoutX="39.0" layoutY="115.0" mnemonicParsing="false" onAction="#newCourse" text="Insert New Course" />
+   </children>
+</AnchorPane>
