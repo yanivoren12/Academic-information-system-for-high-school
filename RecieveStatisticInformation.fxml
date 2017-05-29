@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project2017.RecieveStatisticInformation">
+   <children>
+      <Button fx:id="btnSTDC" layoutX="14.0" layoutY="88.0" mnemonicParsing="false" text="same teacher different classes" />
+      <Button fx:id="btnSCDT" layoutX="274.0" layoutY="88.0" mnemonicParsing="false" text="same class different teachers" />
+      <Button fx:id="btnSCDC" layoutX="540.0" layoutY="88.0" mnemonicParsing="false" text="same class different courses" />
+      <ComboBox fx:id="cmbSTDC" layoutX="38.0" layoutY="176.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbSCDT" layoutX="304.0" layoutY="176.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbSCDC" layoutX="568.0" layoutY="176.0" prefWidth="150.0" />
+      <Text layoutX="68.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select teacher:" />
+      <Text layoutX="338.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select class:" />
+      <Text layoutX="602.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="select class:" />
+      <BarChart layoutX="126.0" layoutY="322.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button layoutX="52.0" layoutY="741.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>
