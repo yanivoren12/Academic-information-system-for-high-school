@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StudentGui">
+   <children>
+      <Text layoutX="72.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello:" />
+      <Label id="lblName" fx:id="lblName" layoutX="120.0" layoutY="67.0" />
+      <Button id="btnSubmit" fx:id="btnSubmit" layoutX="59.0" layoutY="136.0" mnemonicParsing="false" onAction="#submit" text="Submit Assignment" />
+      <Button id="btnEvaluations" fx:id="btnEvaluations" layoutX="63.0" layoutY="184.0" mnemonicParsing="false" onAction="#watchEvaluations" text="Watch Evaluations" />
+      <ListView id="listPersonalInfo" fx:id="listPersonalInfo" layoutX="28.0" layoutY="333.0" prefHeight="405.0" prefWidth="372.0" />
+      <ListView id="listRequest" fx:id="listRequest" layoutX="414.0" layoutY="333.0" prefHeight="405.0" prefWidth="372.0" />
+      <Text layoutX="551.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Request Status" />
+      <Text layoutX="145.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Information" />
+   </children>
+</AnchorPane>

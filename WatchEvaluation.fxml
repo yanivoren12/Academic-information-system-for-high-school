@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.WatchEvaluation">
+   <children>
+      <ComboBox id="cmbCourse" fx:id="cmbCourse" layoutX="325.0" layoutY="190.0" prefWidth="150.0" />
+      <ComboBox id="cmbAssignments" fx:id="cmbAssignments" layoutX="325.0" layoutY="324.0" prefWidth="150.0" />
+      <Button id="btnOpen" fx:id="btnOpen" layoutX="372.0" layoutY="534.0" mnemonicParsing="false" text="Open" />
+      <Text layoutX="169.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Course:" />
+      <Text layoutX="137.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Assignment:" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="589.0" layoutY="654.0" mnemonicParsing="false" onAction="#getbtnBack" text="Back" />
+   </children>
+</AnchorPane>
