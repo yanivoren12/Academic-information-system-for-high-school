@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="AddTeacherMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddTeacherGui">
+   <children>
+      <ComboBox fx:id="ClassList" layoutX="225.0" layoutY="72.0" prefWidth="150.0" promptText="Classes List" />
+      <ComboBox fx:id="CourseList" layoutX="225.0" layoutY="146.0" prefWidth="150.0" promptText="Courses List" />
+      <ComboBox fx:id="TeacherList" layoutX="225.0" layoutY="222.0" prefWidth="150.0" promptText="Teachers List" />
+      <Button fx:id="AddTeacher" layoutX="458.0" layoutY="318.0" mnemonicParsing="false" onAction="#ExeAddTeacher" text="Add Teacher" />
+      <Button fx:id="BackButton" layoutX="56.0" layoutY="318.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</Pane>

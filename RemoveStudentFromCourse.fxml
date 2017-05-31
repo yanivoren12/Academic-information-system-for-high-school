@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="RemoveStudentMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RemoveStudentGui">
+   <children>
+      <ComboBox fx:id="StudentsList" layoutX="225.0" layoutY="73.0" prefWidth="150.0" promptText="Students" />
+      <ComboBox fx:id="CoursesList" layoutX="225.0" layoutY="152.0" prefWidth="150.0" promptText="Courses" />
+      <Button fx:id="ExeRemoveStudent" layoutX="235.0" layoutY="250.0" mnemonicParsing="false" onAction="#RemoveStudent" text="Remove Student" />
+      <Button fx:id="BackButton" layoutX="45.0" layoutY="317.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+   </children>
+</Pane>

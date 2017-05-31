@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="OpenNewSemesterMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OpenNewSemesterGui">
+   <children>
+      <Text fx:id="StartsDateTxt" layoutX="70.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
+      <TextField fx:id="StartDateField" layoutX="177.0" layoutY="55.0" />
+      <TextField fx:id="EndDateField" layoutX="177.0" layoutY="119.0" />
+      <Text fx:id="EndDateTxt" layoutX="70.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Fate" />
+      <ComboBox fx:id="SemesterTypeList" layoutX="195.0" layoutY="185.0" onAction="#DislpaySemesterType" prefWidth="150.0" promptText="Semester Type" />
+      <Button fx:id="Next" layoutX="505.0" layoutY="327.0" mnemonicParsing="false" onAction="#NextWindow" text="Next" />
+      <Button fx:id="CancelButton" layoutX="45.0" layoutY="327.0" mnemonicParsing="false" onAction="#Back" text="Cancel" />
+   </children>
+</Pane>

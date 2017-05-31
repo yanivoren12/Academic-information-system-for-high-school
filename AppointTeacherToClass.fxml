@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="AppointTeacherToClassMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AppointTeacherToClassGui">
+   <children>
+      <ComboBox fx:id="ClassesLst" layoutX="225.0" layoutY="73.0" prefWidth="150.0" promptText="Classes" />
+      <ComboBox fx:id="Courses" layoutX="225.0" layoutY="151.0" prefWidth="150.0" promptText="Courses" />
+      <ComboBox fx:id="TeachersList" layoutX="225.0" layoutY="229.0" prefWidth="150.0" promptText="Teachers" />
+      <Button fx:id="Save" layoutX="268.0" layoutY="302.0" mnemonicParsing="false" onAction="#SaveChoose" text="Save" />
+      <Button fx:id="Finish" layoutX="480.0" layoutY="333.0" mnemonicParsing="false" onAction="#FinishOpenNewSemester" text="Finish" />
+      <Button fx:id="CancelButton" layoutX="36.0" layoutY="333.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+   </children>
+</Pane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane fx:id="Attributemenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AttributeStudentToClassGui">
+   <children>
+      <ComboBox fx:id="ClassesList" layoutX="217.0" layoutY="79.0" prefWidth="150.0" promptText="Classes" />
+      <ComboBox fx:id="Students" layoutX="217.0" layoutY="179.0" prefWidth="150.0" promptText="Student" />
+      <Button fx:id="ExeAddStudent" layoutX="512.0" layoutY="322.0" mnemonicParsing="false" onAction="#ExeAddStudent" text="Add" />
+      <Button fx:id="SaveButton" layoutX="260.0" layoutY="256.0" mnemonicParsing="false" onAction="#SaveData" text="Save" />
+      <Button fx:id="BackButton" layoutX="27.0" layoutY="322.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+   </children>
+</Pane>
