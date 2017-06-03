@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:id="Menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="CheckAssignment" layoutX="75.0" layoutY="130.0" mnemonicParsing="false" onAction="#CheckAssignment" text="Check Assignment" />
+      <Button fx:id="InsertNewAssignment" layoutX="62.0" layoutY="188.0" mnemonicParsing="false" onAction="#InsertNewAssignment" text="Insert New Assignment" />
+      <Button fx:id="ShowRequestStatus" layoutX="68.0" layoutY="239.0" mnemonicParsing="false" onAction="#ShowRequestStatus" text="Show Request Status" />
+   </children>
+</Pane>
