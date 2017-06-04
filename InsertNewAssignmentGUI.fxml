@@ -4,15 +4,14 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:id="InsertNewAssignmentGUI" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:id="InsertNewAssignmentGUI" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InsertNewAssignmentGUI">
    <children>
-      <ComboBox fx:id="CoursesList" layoutX="225.0" layoutY="71.0" prefWidth="150.0" promptText="Courses List" />
-      <Button fx:id="GenerateAssignmentNumber" layoutX="225.0" layoutY="116.0" mnemonicParsing="false" onAction="#GenerateAssignmentNumber" prefHeight="25.0" prefWidth="183.0" text="Generate Assignment Number" />
-      <TextField layoutX="226.0" layoutY="154.0" />
+      <ComboBox fx:id="cmbCourse" layoutX="225.0" layoutY="71.0" onAction="#courseslist" prefWidth="150.0" promptText="Courses List" />
+      <Button fx:id="btnGenrerate" layoutX="225.0" layoutY="116.0" mnemonicParsing="false" onAction="#GenerateAssignmentNumber" prefHeight="25.0" prefWidth="183.0" text="Generate Assignment Number" />
+      <TextField fx:id="txtDeadline" layoutX="226.0" layoutY="154.0" onAction="#deadline" />
       <Label layoutX="133.0" layoutY="158.0" text="Enter Deadline:" />
-      <Button fx:id="ChooseFile" layoutX="226.0" layoutY="200.0" mnemonicParsing="false" onAction="#ChooseFile" text="Choose File" />
-      <Button fx:id="UploadNewAssignment" layoutX="349.0" layoutY="277.0" mnemonicParsing="false" onAction="#UploadNewAssignment" text="Upload New Assignment" />
-      <Button fx:id="Back" layoutX="155.0" layoutY="277.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+      <Button fx:id="btnChoose" layoutX="226.0" layoutY="200.0" mnemonicParsing="false" onAction="#ChooseFile" text="Choose File" />
+      <Button fx:id="btnUpload" layoutX="349.0" layoutY="277.0" mnemonicParsing="false" onAction="#UploadNewAssignment" text="Upload New Assignment" />
+      <Button fx:id="btnBack" layoutX="155.0" layoutY="277.0" mnemonicParsing="false" onAction="#getbtnBack" text="Back" />
    </children>
 </Pane>

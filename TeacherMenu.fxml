@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
+<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
 
 
-<Pane fx:id="Menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TeacherMenuController">
    <children>
-      <Button fx:id="CheckAssignment" layoutX="75.0" layoutY="130.0" mnemonicParsing="false" onAction="#CheckAssignment" text="Check Assignment" />
-      <Button fx:id="InsertNewAssignment" layoutX="62.0" layoutY="188.0" mnemonicParsing="false" onAction="#InsertNewAssignment" text="Insert New Assignment" />
-      <Button fx:id="ShowRequestStatus" layoutX="68.0" layoutY="239.0" mnemonicParsing="false" onAction="#ShowRequestStatus" text="Show Request Status" />
+      <Button fx:id="InsertNewAssignment1" layoutX="93.0" layoutY="57.0" mnemonicParsing="false" onAction="#InsertNewAssignment" text="Insert new assignment" />
+      <Button fx:id="CheckAssignment1" layoutX="93.0" layoutY="98.0" mnemonicParsing="false" onAction="#CheckAssignment" text="Check assignment" />
+      <Button fx:id="ShowRequestStatus1" layoutX="93.0" layoutY="139.0" mnemonicParsing="false" onAction="#ShowRequestStatus" text="Show request status" />
    </children>
 </Pane>

@@ -4,14 +4,13 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CheckAssignmentGUI">
    <children>
-      <ComboBox fx:id="CoursesList" layoutX="225.0" layoutY="50.0" prefWidth="150.0" promptText="Courses List" />
-      <ComboBox fx:id="ClassesList" layoutX="225.0" layoutY="97.0" prefWidth="150.0" promptText="Classes List" />
-      <ComboBox fx:id="StudentsList" layoutX="225.0" layoutY="142.0" prefWidth="150.0" promptText="Students List" />
-      <ComboBox fx:id="AssignmentsList" layoutX="225.0" layoutY="188.0" prefWidth="150.0" promptText="Assignments List" />
-      <Button fx:id="DownloadFile" layoutX="375.0" layoutY="255.0" mnemonicParsing="false" onAction="#DownloadFile" text="Download File" />
-      <Button fx:id="Back" layoutX="173.0" layoutY="255.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+      <ComboBox fx:id="cmbCourse" layoutX="225.0" layoutY="50.0" onAction="#CoursesList" prefWidth="150.0" promptText="Courses List" />
+      <ComboBox fx:id="cmbClass" layoutX="225.0" layoutY="97.0" onAction="#ClassList" prefWidth="150.0" promptText="Classes List" />
+      <ComboBox fx:id="cmbStudent" layoutX="225.0" layoutY="142.0" onAction="#StudentList" prefWidth="150.0" promptText="Students List" />
+      <ComboBox fx:id="cmbAssignments" layoutX="225.0" layoutY="188.0" onAction="#AssignmentList" prefWidth="150.0" promptText="Assignments List" />
+      <Button fx:id="btnChoose" layoutX="375.0" layoutY="255.0" mnemonicParsing="false" onAction="#DownloadFile" text="Download File" />
+      <Button fx:id="btnBack" layoutX="173.0" layoutY="255.0" mnemonicParsing="false" onAction="#getbtnBack" text="Back" />
    </children>
 </Pane>
