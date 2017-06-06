@@ -19,7 +19,9 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import java.awt.Desktop;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -35,8 +37,16 @@ import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class InsertNewAssignmentGUI implements Initializable  {
 
+	String filePath;
+	int AssignmentID=0;
+	private String lastSubmissionDate;
 
     @FXML // fx:id="btnBack"
     private Button btnBack; // Value injected by FXMLLoader
@@ -94,12 +104,16 @@ void courseslist(ActionEvent event) {
 
 @FXML
 void GenerateAssignmentNumber(ActionEvent event) {
-
+	AssignmentID++;
 }
 
 @FXML
 void deadline(ActionEvent event) {
-
+	if ((txtDeadline.getText() != null && !txtDeadline.getText().isEmpty())) {
+		lastSubmissionDate=txtDeadline.getText();
+    } else {
+        txtDeadline.setText("You have not left a deadline.");
+    }
 }
 
 @FXML
@@ -108,32 +122,9 @@ void ChooseFile(ActionEvent event) {
 	Stage primaryStage1 = new Stage();
 	primaryStage1.setTitle("File Chooser Sample");
 	final FileChooser fileChooser = new FileChooser(); 
-  
-    btnChoose.setOnAction(
-        new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(final ActionEvent e) {
-                configureFileChooser(fileChooser);
-                File file = fileChooser.showOpenDialog(primaryStage1);
-                if (file != null) {
-                    openFile(file);
-                }
-            }
-        });
-
-    final GridPane inputGridPane = new GridPane();
-
-    GridPane.setConstraints(btnChoose, 0, 1);
-    inputGridPane.setHgap(6);
-    inputGridPane.setVgap(6);
-    inputGridPane.getChildren().addAll(btnChoose);
-    
-    final Pane rootGroup = new VBox(12);
-    rootGroup.getChildren().addAll(inputGridPane);
-    rootGroup.setPadding(new Insets(12, 12, 12, 12));
-
-    primaryStage1.setScene(new Scene(rootGroup));
-    primaryStage1.show();
+	configureFileChooser(fileChooser);
+    File file = fileChooser.showOpenDialog(primaryStage1);
+    filePath=file.getAbsolutePath();
 }
 private static void configureFileChooser(
         final FileChooser fileChooser) {      
@@ -146,20 +137,35 @@ private static void configureFileChooser(
                 new FileChooser.ExtensionFilter("PDF", "*.pdf")
             );
     }
- 
-    private void openFile(File file) {
-        try {
-            desktop.open(file);
-        } catch (IOException ex) {
-            Logger.getLogger(InsertNewAssignmentGUI.class.getName()).log(
-                Level.SEVERE, null, ex
-            );
-        }
-    }
 
 @FXML
 void UploadNewAssignment(ActionEvent event) {
 
+	String url = "jdbc:mysql://localhost/project_2017";
+    String user = "root";
+    String password = "12345";
+    try {
+        Connection conn = DriverManager.getConnection(url, user, password);
+        String sql = "INSERT INTO assignment (AssignmentID, courseNumber, uploadDate,lastSubmissionDate,file) values (?, ?, ?, ?, ?)";
+        PreparedStatement statement = conn.prepareStatement(sql);
+        statement.setInt(1, AssignmentID);
+        statement.setString(2, "Eagar");
+        statement.setString(3, "Eagar");
+        statement.setString(4, lastSubmissionDate);
+        InputStream inputStream = new FileInputStream(new File(filePath));
+
+        statement.setBlob(5, inputStream);
+
+        int row = statement.executeUpdate();
+        if (row > 0) {
+            System.out.println("An assignment was inserted with file.");
+        }
+        conn.close();
+    } catch (SQLException ex) {
+        ex.printStackTrace();
+    } catch (IOException ex) {
+        ex.printStackTrace();
+    }
 }
 }
 
