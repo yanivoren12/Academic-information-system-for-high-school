@@ -10,7 +10,8 @@
       <ComboBox fx:id="cmbClass" layoutX="225.0" layoutY="97.0" onAction="#ClassList" prefWidth="150.0" promptText="Classes List" />
       <ComboBox fx:id="cmbStudent" layoutX="225.0" layoutY="142.0" onAction="#StudentList" prefWidth="150.0" promptText="Students List" />
       <ComboBox fx:id="cmbAssignments" layoutX="225.0" layoutY="188.0" onAction="#AssignmentList" prefWidth="150.0" promptText="Assignments List" />
-      <Button fx:id="btnChoose" layoutX="375.0" layoutY="255.0" mnemonicParsing="false" onAction="#DownloadFile" text="Download File" />
+      <Button fx:id="btnDownload" layoutX="375.0" layoutY="255.0" mnemonicParsing="false" onAction="#DownloadFile" text="Download File" />
       <Button fx:id="btnBack" layoutX="173.0" layoutY="255.0" mnemonicParsing="false" onAction="#getbtnBack" text="Back" />
+      <Button fx:id="btnChoose" layoutX="375.0" layoutY="294.0" mnemonicParsing="false" onAction="#ChoosePath" text="Choose Path" />
    </children>
 </Pane>
